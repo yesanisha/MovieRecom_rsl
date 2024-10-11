@@ -1,0 +1,136 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fragmentIntroduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="50dp"
+            android:text="All Movies"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <!-- RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerviewForAllMovies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Relative Layout for precise positioning of ImageButtons -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- ImageButton 1 -->
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="117dp"
+                android:layout_height="127dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="261dp"
+                android:layout_marginBottom="20dp"
+                android:contentDescription="Movie poster of arjun readdy"
+                android:padding="0dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/hit2_movie" />
+
+            <!-- ImageButton 2 -->
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="117dp"
+                android:layout_height="119dp"
+                android:layout_below="@id/imageButton1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="258dp"
+                android:layout_marginBottom="20dp"
+                android:contentDescription="Movie poster of 3 Idiots"
+                android:padding="0dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/idiots_m" />
+
+            <!-- ImageButton 3 -->
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="117dp"
+                android:layout_height="127dp"
+                android:layout_below="@id/imageButton2"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="258dp"
+                android:layout_marginBottom="20dp"
+                android:contentDescription="Movie poster of arjun readdy"
+                android:padding="0dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/arjun_m" />
+
+            <!-- ImageButton 4 -->
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="117dp"
+                android:layout_height="127dp"
+                android:layout_below="@id/imageButton3"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="256dp"
+                android:layout_marginBottom="20dp"
+                android:contentDescription="Movie poster of joker"
+                android:padding="0dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/rrr" />
+
+            <!-- ImageButton 5 -->
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="117dp"
+                android:layout_height="127dp"
+                android:layout_below="@id/imageButton4"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="256dp"
+                android:layout_marginBottom="20dp"
+                android:contentDescription="Movie poster of joker"
+                android:padding="0dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/intes" />
+
+            <!-- ImageButton 6 -->
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="117dp"
+                android:layout_height="127dp"
+                android:layout_below="@id/imageButton5"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="256dp"
+                android:layout_marginBottom="20dp"
+                android:contentDescription="Movie poster of joker"
+                android:padding="0dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/kanchan" />
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="117dp"
+                android:layout_height="127dp"
+                android:layout_below="@id/imageButton6"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="256dp"
+                android:layout_marginBottom="20dp"
+                android:contentDescription="Movie poster of joker"
+                android:padding="0dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/devdas" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
